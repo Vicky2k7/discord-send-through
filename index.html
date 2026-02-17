@@ -31,8 +31,8 @@
         }
 
         #centerscale {
-            width: 40rem;
-            height: 20rem;
+            width: min(40rem, 90%);
+            height: 25rem;
         }
 
         .center {
@@ -41,7 +41,7 @@
             left: 50%;
             transform: translate(-50%, -50%);
         }
-
+        
         #join {
             display: inline-block;
 
@@ -76,26 +76,37 @@
         #join:hover {
             transform: scale(1.15);
         }
+
+        img {width:150px; height:150px}
+
+        footer {
+            position: fixed;
+            bottom:.25rem;
+        }
     </style>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Discord - Arets Server Minecraft</title>
 
-
+    <link rel="shortcut icon" href="./favicon.png" type="image/x-icon">
 </head>
 
 <body>
     <div class="glass center" id="centerscale">
         <div class="center">
+            <img src="./favicon.png" alt="Red Grass Block">
             <h2>Join the Discord Server:<br></h2>
             <h3><i class="subtext">Word lid van de Discord server</i></h3>
 
             <br><br>
 
             <a id="join" href="https://discord.gg/VXMcdhdjPu">JOIN</a>
+            <br><br><br>
         </div>
     </div>
+
+    <footer>©2026 V. Arets</footer>
 </body>
 
 </html>
