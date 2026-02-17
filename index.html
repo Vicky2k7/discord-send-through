@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+        html {
+            font-family: 'Roboto', sans-serif;
+
+            background-image: url("./bg.png");
+            background-size: max(100vw, 100vh) max(100vw, 100vh);
+
+            font-weight: bold;
+            color:white;
+        }
+
+        .subtext {
+            font-weight: normal;
+            filter: opacity(0.5);
+        }
+
+        .glass {
+            text-align: center;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 16px;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(5px);
+            -webkit-backdrop-filter: blur(5px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+
+        #centerscale {
+            width: 40rem;
+            height: 20rem;
+        }
+
+        .center {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        #join {
+            display: inline-block;
+
+            padding: 1rem;
+            margin: 1rem;
+
+            background-color: rgb(0, 0, 255, 0.2);
+            border-radius: 16px;
+            color: white;
+
+            transition: transform 0.3s ease;
+        }
+
+        #join:link {
+            color: white;
+            text-decoration: none;
+        }
+
+        #join:visited {
+            color: white;
+        }
+
+        #join:hover {
+            color: white;
+            /* or whatever color you want */
+        }
+
+        #join:active {
+            color: white;
+        }
+
+        #join:hover {
+            transform: scale(1.15);
+        }
+    </style>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discord - Arets Server Minecraft</title>
+
+
+</head>
+
+<body>
+    <div class="glass center" id="centerscale">
+        <div class="center">
+            <h2>Join the Discord Server:<br></h2>
+            <h3><i class="subtext">Word lid van de Discord server</i></h3>
+
+            <br><br>
+
+            <a id="join" href="https://discord.gg/VXMcdhdjPu">JOIN</a>
+        </div>
+    </div>
+</body>
+
+</html>
